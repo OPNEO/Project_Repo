@@ -1,0 +1,2 @@
+Dual Dice Number is 2,6 
+Dual Dice Number is 5,2 
