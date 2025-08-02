@@ -7,3 +7,6 @@ Single Dice number is 3
 Single Dice number is 1 
 Single Dice number is 4 
 Single Dice number is 6 
+Single Dice number is 5 
+Single Dice number is 4 
+Single Dice number is 1 
