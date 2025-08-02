@@ -2,9 +2,9 @@ import pandas
 import os
 print('WELCOME TO MINI EXPENSE TRACKER')
 def user_inputs_records():
-    amount = input('Enter amount Spent')
-    category = input('Enter category where you spent')
-    note = input('Any NOte Vroo')
+    amount = int(input('Enter Amount In Rupees:'))
+    category = input('Category Where Spent(food/club/sport/gaming):')
+    note = input('NOTE:')
     return amount,category,note
 def append_and_save_record(amount, category, note):
     record = {
