@@ -31,7 +31,6 @@ for file in os.listdir(folder_path):
         if extension in list_of_extenstions:
             dest_folder = os.path.join(folder_path, extension[1:])
             dest_path = os.path.join(dest_folder, file)
-            # Avoid overwrite
             if not os.path.exists(dest_path):
                 shutil.move(full_path, dest_path)
             else:
