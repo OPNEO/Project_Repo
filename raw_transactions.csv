@@ -1,0 +1,7 @@
+transaction_id,customer_name,customer_email,product_name,product_category,amount,transaction_date
+1,Alice Sharma,alice@example.com,iPhone 13,Electronics,899,2023-06-01 10:10:00
+2,Bob Mehra,bob@example.com,Samsung TV,Electronics,1200,2023-06-01 12:30:00
+3,Alice Sharma,alice@example.com,Apple Watch,Accessories,399,2023-06-02 09:00:00
+4,Diana Rao,diana@example.com,Kindle Paperwhite,Books,129,2023-06-02 15:10:00
+5,Bob Mehra,bob@example.com,Sony Headphones,Accessories,199,2023-06-03 18:45:00
+6,Charlie Singh,charlie@example.com,iPhone 13,Electronics,899,2023-06-03 20:15:00
