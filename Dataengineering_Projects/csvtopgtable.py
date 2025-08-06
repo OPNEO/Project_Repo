@@ -5,7 +5,7 @@ conn=psycopg2.connect(dbname='CSV_DATA',user='postgres',password=1234,host='loca
 cursor=conn.cursor()
 # cursor.execute('create table csv_to_table (transaction_id INT PRIMARY KEY ,customer_name TEXT NOT NULL,customer_email VARCHAR NOT NULL,product_name VARCHAR,product_category VARCHAR ,amount INT,transaction_date DATE)')
 # conn.commit()
-with open('raw_transactions.csv') as file:
+with open('../raw_transactions.csv') as file:
     data=csv.reader(file)
     next(data)
     csv_data=list(data)
