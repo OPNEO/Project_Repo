@@ -1,5 +1,4 @@
 import os
-
 print('#'*20,'Welcome To TODO TASK','#'*20)
 if not os.path.exists('data.txt'):
     open('data.txt', 'w').close()
@@ -24,7 +23,7 @@ def remove_item():
     with open('data.txt','w') as file:
         file.writelines(data_list)
 while True:
-    option=int(input('Choose option\n1.View_data\n2.Insert_data\n3.Remove_item:'))
+    option=int(input('Choose option\n1.View_data\n2.Insert_data\n3.Remove_item:\n44.exit'))
     if option==1:
         print('#'*5,'Current TODO Task :','#'*5)
         for i,x in enumerate(data_list,1):
@@ -33,5 +32,7 @@ while True:
         write_data()
     elif option==3:
         remove_item()
+    elif option==4:
+        break
     else:
         print('Try Again Choose Correct Option ')

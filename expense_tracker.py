@@ -17,7 +17,7 @@ def append_and_save_record(amount, category, note):
     df.to_csv('csv_data/data.csv', mode='a', header=not file_exists, index=False)
 def view_data():
     df=pandas.read_csv('csv_data/data.csv')
-    print("\n🧾 Expense Records:\n")
+    print("\nExpense Records:")
     print(df)
 while True:
     option=int(input('1.Write_Rocords\n2.View_Records:'))

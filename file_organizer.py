@@ -10,7 +10,7 @@ Move them to separate folders
 import os
 import shutil
 
-folder_path = r'C:\Users\Sohail\Downloads'
+folder_path = r'C:\Users\S6032275\Downloads\test'
 list_of_extenstions = set()
 
 if os.path.exists(folder_path):

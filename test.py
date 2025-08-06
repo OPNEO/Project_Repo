@@ -1,6 +1,6 @@
 import pandas
 from sqlalchemy import create_engine
-engine = create_engine("postgresql+psycopg2://postgres:1234@localhost:5432/csv_database")
+engine = create_engine("postgresql+psycopg2://postgres:1234@localhost:5432/CSV_DATA")
 data=pandas.read_csv('raw_transactions.csv')
 transaction=data['transaction_id'].tolist()
 amount=data['amount'].tolist()
