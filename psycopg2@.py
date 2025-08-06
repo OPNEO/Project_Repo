@@ -1,8 +1,11 @@
 import psycopg2
 conn=psycopg2.connect(dbname='CSV_DATA',user='postgres',password=1234,host='localhost',port=5432)
 cursor=conn.cursor()
+cursor.execute('create table transactions2 (transaction_id INT PRIMARY KEY ,customer_name TEXT NOT NULL,customer_email VARCHAR NOT NULL,product_name VARCHAR,product_category VARCHAR ,amount INT,transaction_date DATE)')
+conn.commit()
 cursor.execute("SELECT * FROM transactions")
 data=cursor.fetchall()
+
 for x in data:
     data=list(x)
     transaction_id = data[0]
